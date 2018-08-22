@@ -1,0 +1,72 @@
+html {
+	overflow: hidden;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+}
+.bg-image {
+	position: absolute;
+}
+.main {
+	width: 100%;
+	background-color: #c7e0ff85;
+	position: absolute;
+}
+.title {
+	position: absolute;
+	right: 6%;
+	top: 12%;
+}
+.title h1 {
+	font-weight: 500;
+	font-size: 45px;
+}
+.title span {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font-family: STZhongsong;
+}
+.hint {
+	display: none;
+}
+.loginbar {
+	width: 14%;
+	/*height: 23%;*/
+	padding: 2% 3.5%;
+	background: rgba(248, 248, 248, 0.7);
+	box-shadow: rgba(0, 0, 0, 0.08) 1px 3px 1px;
+	position: absolute;
+	right: 6%;
+	top: 35%;
+}
+.loginbar h3 {
+	position: relative;
+	right: 5%;
+	color: rgb(120, 120, 120);
+	margin: 3% 0px 6%;
+	font-weight: 500;
+	font-size: 20px;
+}
+.loginbar input {
+	position: relative;
+	right: 5%;
+	height: 44px;
+	width: 100%;
+	padding: 0px 5%;
+	margin-bottom: 15px;
+	border: none;
+	font-size: 15px;
+	color: rgb(68, 68, 68);
+	background-color: rgb(255, 255, 255);
+	box-shadow: rgb(221, 221, 221) 0px -1px 0px inset;
+}
+.loginbar .submit {
+	width: 110%;
+	border-radius: 3px;
+	transition: 0.3s;
+	color: rgb(255, 255, 255);
+    background-color: rgb(230, 89, 78);
+	box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px;
+}

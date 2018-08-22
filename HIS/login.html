@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign in</title>
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<img class="bg-image" id="bg-image" src="img/be5004e71963dbe7b2066098c2636721.jpg" alt="img">
+	<div class="main" id="main">
+		<div class="title">
+			<h1>Hospital Information System</h1>
+			<span id="timeShow_1"></span>
+			<span id="timeShow"></span>
+		</div>
+		<div class="loginbar">
+			<h3>Sign in</h3>
+			<form action="" onsubmit="return check()">
+				<input type="text" placeholder="User ID" id="username">
+				<input type="password" placeholder="Password" id="userpwd">
+				<input type="submit" value="Sign In" onmouseover="mov()" onmouseout="mou()" class="submit" id="submit">
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script>
+		var bg = document.getElementById("bg-image");
+		var main = document.getElementById("main");
+		bg.style.height = $(window).height()+"px";
+		main.style.height = $(window).height()+"px";
+	</script>
+	<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

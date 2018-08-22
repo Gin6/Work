@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="head">
+		<ul class="bar">
+			<li>
+				<a href="">主站</a>
+			</li>
+			<li>
+				<a href="">画友</a>
+			</li>
+			<li>
+				<a href="">游戏中心</a>
+			</li>
+			<li>
+				<a href="">直播</a>
+			</li>
+			<li>
+				<a href="">会员购</a>
+			</li>
+			<li>
+				<a href="">周边</a>
+			</li>
+			<li>
+				<a href="">移动端</a>
+			</li>
+		</ul>		
+		<a href=""><img class="logo" src="images/logo.png" alt="logo"></a>
+		<div class="bar_2">
+			<img class="p1" src="images/1.jpg">
+			<a class="history l1" href="" alt="history">历史</a>
+			<a class="contribution l1" href="" alt="contribution">投稿</a>
+			<img class="p2" src="images/2.png">
+		</div>
+	</div>
+	<div class="top-banner">
+		<img src="images/3.png">
+	</div>
+	<div class="main_2">
+		<div class="title-line">
+			<span class="tit">注册</span>
+		</div>
+		<form action="/" onsubmit="return check()">
+		<div class="register">
+			<div class="name box_2">
+				<input class="u_n_pwd box username" id="username" type="text" name="username" placeholder="昵称（例：哔哩哔哩）" onfocus="$('hint_1').style.display='none'">
+				<p class="hint_1 hint" id="hint_1">你的用户名过短，不允许注册！</p>
+			</div>
+			<div class="safe box_2">
+				<p>安全系数</p>
+				<div class="a_pw">
+					<div class="safe_line bc0001"></div>
+					<div class="safe_line bc0002"></div>
+					<div class="safe_line bc0003"></div>
+					<div class="safe_line bc0004"></div>
+					<div class="safe_line bc0005"></div>
+					<p class="a">弱</p>
+				</div>
+			</div>
+			<div class="password box_2">
+				<input class="u_n_pwd box userpwd" id="userpwd" type="password" name="userpwd" placeholder="密码（6-16个字符组成，区分大小写）" onfocus="$('hint_2').style.display='none';$('hint_3').style.display='none'">
+				<p class="hint_2 hint" id="hint_2"></p>
+			</div>
+			<div class="country">
+				<select class="box" name="country_code">
+					<option value="1">中国大陆</option>
+					<option value="2">香港特别行政区</option>
+					<option value="3">澳门特别行政区</option>
+					<option value="4">台湾地区</option>
+					<option value="5">美国</option>
+					<option value="6">比利时</option>
+					<option value="7">澳大利亚</option>
+					<option value="8">法国</option>
+					<option value="9">加拿大</option>
+					<option value="10">日本</option>
+				</select>
+				<input class="phone box" type="text" name="tel" placeholder="填写常用手机号">
+				<p class="hint_3 hint" id="hint_3">请输入正确的手机号码！</p>
+			</div>
+			<div class="mailbox box_2 m-d">
+				<a href="https://passport.bilibili.com/register/mail.html">用邮箱注册></a>
+			</div>
+			<div class="code box_2">
+				<input class="code_box box" type="text" name="code">
+				<a class="code_buttom" href="">点击获取</a>
+			</div>
+			<div class="explain box_2">
+				<input type="checkbox" id="checkbox">我已同意
+				<a target="_blank" href="https://passport.bilibili.com/register/licence">《哔哩哔哩弹幕网用户使用协议》</a>和
+				<a target="_blank" href="http://www.bilibili.com/html/help.html#q">《哔哩哔哩弹幕网账号中心规范》</a>
+			</div>
+			<input class="submit_button" id="sbutton" type="submit" value="注册"
+			disabled="true">
+			<div class="direct box_2 m-d">
+				<a href="">已有账号，直接登录></a>
+			</div>
+		</div>
+		</form>
+	</div>
+	<div class="end">
+		<p>@2017-10-15</p>
+		<p>POWER BY GIN</p>
+	</div>
+	<script type="text/javascript" src="js/check.js"></script>
+</body>
+</html>
