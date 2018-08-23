@@ -65,9 +65,9 @@ function check() {
 	var username = $("username").value;
 	var userpwd = $("userpwd").value;
 	if (username.length < 1 || userpwd.length < 1) {
-		$("loginbar").style.cssText = "background: rgba(230, 89, 78, 0.80);";
+		$("loginbar").style.cssText = "background: rgba(230, 89, 78, 0.65);";
 		$("si").style.cssText = "color: rgb(255, 255, 255);";
-		$("submit").style.cssText = "background-color: rgba(0, 0, 0, 0.22);";
+		$("submit").style.cssText = "background-color: rgba(208, 208, 208, 0.80); box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;";
 		$("submit").disabled = true;
 	}
 	if (username.length < 1 && userpwd.length < 1) {
@@ -98,7 +98,7 @@ function ENLanguage() {
 function ZHLanguage() {
 	$A("title")[0].innerText = "登录";
 	$("his").innerHTML = "医院信息管理系统";
-	$("his").style.cssText = "letter-spacing: 10px; right: -10px; position: relative;";
+	$("his").style.cssText = "letter-spacing: 20px; right: -20px; position: relative;";
 	$("si").innerHTML = "登录";
 	$("username").placeholder = "用户名";
 	$("userpwd").placeholder = "密码";
