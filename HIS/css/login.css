@@ -13,6 +13,67 @@ body {
 	background-color: #c7e0ff85;
 	position: absolute;
 }
+.changeLanguage {
+	position: absolute;
+	background-color: #d4e9fe;
+	text-align: center;
+	right: 6%;
+	top: 10px;
+	width: 60px;
+	z-index: 2;
+}
+.changeLanguage a {
+	text-decoration: none;
+	color: rgb(120, 120, 120);
+}
+.changeLanguage a:hover {
+	color: #000;
+}
+.changeLanguage a:before {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	right: 5px;
+	top: 10px;
+	border-top: 3px solid rgb(120, 120, 120);
+	border-right: 3px solid rgb(0, 0, 0, 0);
+	border-left:  3px solid rgb(0, 0, 0, 0);
+}
+.changeLanguage a:hover:before {
+	border-top: 3px solid #000;
+}
+.changeLanguage:hover .Lbar {
+	top: 20px;
+	background-color: rgba(248, 248, 248, 0.7);
+	box-shadow: rgba(0, 0, 0, 0.08) 3px 3px 5px;
+}
+.changeLanguage:hover .Lbar button{
+	background-color: rgb(237, 243, 249);
+	color: rgba(120, 120, 120);
+}
+.Lbar {
+	position: absolute;
+	width: 100%;
+	top: -90px;
+	padding: 6px 0px;
+	transition: .3s;
+	background-color: rgba(248, 248, 248, 0);
+	box-shadow: rgba(0, 0, 0, 0) 3px 3px 5px;
+	z-index: 1;
+}
+.Lbar button {
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 8px;
+	background-color: rgb(237, 243, 249, 0);
+	color: rgba(0, 0, 0, 0);
+}
+.changeLanguage .Lbar button:hover {
+	background-color: #fff;
+	color: #000;
+}
 .title {
 	position: absolute;
 	right: 6%;
@@ -37,6 +98,7 @@ body {
 	background: rgba(248, 248, 248, 0.7);
 	box-shadow: rgba(0, 0, 0, 0.08) 1px 3px 1px;
 	position: absolute;
+	transition: .3s;
 	right: 6%;
 	top: 35%;
 }
@@ -65,10 +127,8 @@ body {
 	width: 110%;
 	border-radius: 3px;
 	transition: 0.3s;
+	outline: none;
 	color: rgb(255, 255, 255);
     background-color: rgb(230, 89, 78);
 	box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px;
-}
-.xx {
-	
 }

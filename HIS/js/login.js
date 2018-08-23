@@ -1,6 +1,9 @@
 function $(id) {
 	return document.getElementById(id);
 }
+function $A(ca) {
+	return document.getElementsByTagName(ca);
+}
 function mov() {
 	$('submit').style.cssText = "background-color: rgb(208, 71, 61);";
 }
@@ -53,31 +56,51 @@ function mou() {
 	 else {
 	 	$("timeShow_1").innerHTML=h+" : "+mm+" : "+s;
 	 }
-	 $("timeShow_1").style.cssText = "right: 30%;";
+	 $("timeShow_1").style.cssText = "right: 200px;";
 	 y = setTimeout(time,1000);    
 	} 
 	window.onload=function(){time()}
 })();
-	function check() {
-		var username = $("username").value;
-		var userpwd = $("userpwd").value; 
-		if (username.length < 1 && userpwd.length < 1) {
-			$("hint_1").innerHTML="用户名不能为空";
-			$("hint_2").innerHTML="密码不能为空";
-			$("hint_1").style.cssText = "display: inline;";
-			$("hint_2").style.cssText = "display: inline;";
-			return false;
-		}
-		else if (username.length < 1 && userpwd.length >= 1) {
-			$("hint_1").innerHTML="用户名不能为空";
-			$("hint_1").style.cssText = "display: inline;";
-			return false;
-		}
-		else if (username.length >= 1 && userpwd.length < 1) {
-			$("hint_2").innerHTML="密码不能为空";
-			$("hint_2").style.cssText = "display: inline;";
-			return false;
-		}
-		else
-			return true;
+function check() {
+	var username = $("username").value;
+	var userpwd = $("userpwd").value;
+	if (username.length < 1 || userpwd.length < 1) {
+		$("loginbar").style.cssText = "background: rgba(230, 89, 78, 0.80);";
+		$("si").style.cssText = "color: rgb(255, 255, 255);";
+		$("submit").style.cssText = "background-color: rgba(0, 0, 0, 0.22);";
+		$("submit").disabled = true;
 	}
+	if (username.length < 1 && userpwd.length < 1) {
+		$("username").placeholder = "用户名不能为空";
+		$("userpwd").placeholder = "密码不能为空";
+		return false;
+	}
+	else if (username.length < 1 && userpwd.length >= 1) {
+		$("username").placeholder = "用户名不能为空";
+		return false;
+	}
+	else if (username.length >= 1 && userpwd.length < 1) {
+		$("userpwd").placeholder = "密码不能为空";
+		return false;
+	}
+	else
+		return true;
+}
+function ENLanguage() {
+	$A("title")[0].innerText = "Sign in";
+	$("his").innerHTML = "Hospital Information System";
+	$("his").style.cssText = "letter-spacing: initial; right: 0px;";
+	$("si").innerHTML = "Sign in";
+	$("username").placeholder = "User ID";
+	$("userpwd").placeholder = "Password";
+	$("submit").value = "Sign In";
+}
+function ZHLanguage() {
+	$A("title")[0].innerText = "登录";
+	$("his").innerHTML = "医院信息管理系统";
+	$("his").style.cssText = "letter-spacing: 10px; right: -10px; position: relative;";
+	$("si").innerHTML = "登录";
+	$("username").placeholder = "用户名";
+	$("userpwd").placeholder = "密码";
+	$("submit").value = "登录";
+}
