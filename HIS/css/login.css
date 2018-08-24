@@ -5,9 +5,6 @@ body {
 	padding: 0px;
 	margin: 0px;
 }
-.bg-image {
-	position: absolute;
-}
 .main {
 	width: 100%;
 	background-color: #c7e0ff85;
@@ -15,19 +12,19 @@ body {
 }
 .changeLanguage {
 	position: absolute;
-	background-color: #d4e9fe;
+	background-color: #d4e9fe00;
 	text-align: center;
 	right: 6%;
 	top: 10px;
 	width: 60px;
-	z-index: 2;
+	z-index: 3;
 }
 .changeLanguage a {
 	text-decoration: none;
-	color: rgb(120, 120, 120);
+	color: rgb(189, 189, 189);
 }
 .changeLanguage a:hover {
-	color: #000;
+	color: #fff;
 }
 .changeLanguage a:before {
 	content: "";
@@ -36,20 +33,20 @@ body {
 	height: 0px;
 	right: 5px;
 	top: 10px;
-	border-top: 3px solid rgb(120, 120, 120);
+	border-top: 3px solid rgb(189, 189, 189);
 	border-right: 3px solid rgb(0, 0, 0, 0);
 	border-left:  3px solid rgb(0, 0, 0, 0);
 }
 .changeLanguage a:hover:before {
-	border-top: 3px solid #000;
+	border-top: 3px solid #fff;
 }
 .changeLanguage:hover .Lbar {
 	top: 20px;
-	background-color: rgba(248, 248, 248, 0.7);
-	box-shadow: rgba(0, 0, 0, 0.08) 3px 3px 5px;
+	border-radius: 3px;
+	background-color: rgba(248, 248, 248, 0.85);
+	box-shadow: rgba(255, 253, 253, 0.2) 3px 3px 5px;
 }
 .changeLanguage:hover .Lbar button{
-	background-color: rgb(237, 243, 249);
 	color: rgba(120, 120, 120);
 }
 .Lbar {
@@ -73,11 +70,13 @@ body {
 .changeLanguage .Lbar button:hover {
 	background-color: #fff;
 	color: #000;
+	border-radius: 2px;
 }
 .title {
 	position: absolute;
 	right: 6%;
 	top: 12%;
+	z-index: 2;
 }
 .title h1 {
 	font-weight: 500;
@@ -101,6 +100,7 @@ body {
 	transition: .3s;
 	right: 6%;
 	top: 35%;
+	z-index: 2;
 }
 .loginbar h3 {
 	position: relative;
