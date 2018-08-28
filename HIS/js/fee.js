@@ -7,7 +7,7 @@ function mov_1() {
 }
 function mou_1() {
 	$B('auther_head').style.cssText = "width: 40px;top: 5px;right: 55px;";
-	$B('username_1').style.cssText = "right: 75px; z-index: 1;";
+	$B('username_1').style.cssText = "right: 75px; z-index: -1;";
 }
 function pay() {
 	$B('paybox').style.cssText = "top: 0%;";

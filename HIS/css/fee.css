@@ -21,7 +21,7 @@
 	text-align: center;
 }
 .main_header {
-	top: 45px;
+	top: 6%;
 	color: rgb(74, 74, 74);
 	font-size: 10px; 
 }
@@ -31,34 +31,36 @@
 }
 .main_content {
 	width: 94%;
-    height: 65%;
+    height: 70%;
     overflow: scroll;
-    top: 100px;
+    top: 13%;
     margin: 0px 3%;;
 }
 .main_content_attribute {
 	background-color: #e9f3ff;
 }
 .main_footer {
-	bottom: 0px;
-	padding: 15px 0px;
+	bottom: 4%;
 	color: rgb(74, 74, 74);
 }
 .main_header_box {
-	width: 100px;
+	width: 10%;
 	border-bottom: 1px solid rgb(120, 120, 120);
 }
 .main_header_td1 {
 	width: 25px;
 }
+.main_header_td2 {
+	width: 12%;
+}
 .main_header_td4 {
-	width: 150px;
+	width: 13%;
 }
 .main_header_td8 {
-	width: 50px;
+	width: 5%;
 }
 .main_header_td10 {
-	width: 50px;
+	width: 5%;
 }
 .main_content td {
 	padding: 10px;
@@ -71,7 +73,7 @@
 	width: 30%;
 }
 .main_footer_box {
-	width: 100px;
+	width: 10%;
 	border: 1px solid rgb(120, 120, 120);
 	border-radius: 3px;
 }
@@ -79,19 +81,19 @@
 	width: 65px;
 }
 .main_footer_td2 {
-	width: 200px;
+	width: 20%;
 }
 .main_footer_td4 {
-	width: 140px;
+	width: 15%;
 }
 .main_footer_td5 {
-	width: 110px;
+	width: 15%;
 }
 .main_footer_td6 {
-	width: 130px;
+	width: 15%;
 }
 .main_footer_td7 {
-	width: 80px;
+	width: 8%;
 }
 .main_footer table {
 	padding: 0px 15% 0px 3%;
@@ -99,13 +101,13 @@
 }
 .pay {
 	position: absolute;
-    padding: 13px 32px;
+    padding: 13px 3%;
     color: #fff;
     border: none;
     border-radius: 7px;
     font-size: 20px;
     background-color: #dd3c3c;
-    top: 15px;
+    top: 0px;
     right: 3%;
     outline: none;
 }
@@ -114,14 +116,14 @@
 	width: 100%;
 	height: 100%;
 	top: 100%;
-	background-color: #3a3a3ade;
+	background-color: #3a3a3af0;
 	border-top-left-radius: 40px;
 	border-top-right-radius: 40px;
 	transition: .2s;
 }
 .pay_back {
 	position: absolute;
-    color: #ff3f3f;
+    color: #fff;
     border: none;
     font-size: 30px;
     background-color: #dd3c3c00;
@@ -130,12 +132,21 @@
     outline: none;
 }
 .pay_back:hover {
-	color: #dd3c3c;
+	color: #dc4747;
+}
+.paybox_img {
+	position: absolute;
+	height: 30%;
+	top: 35%;
+	left: 23%;
+}
+.paybox_img img {
+	height: 100%;
 }
 .paybox_main {
 	position: absolute;
     top: 25%;
-    left: 35%;
+    left: 50%;
     width: 30%;
     background-color: #fff;
     height: 50%;
