@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>医生管理</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/doctor_s.css">
+	<link rel="stylesheet" href="css/homeHeader.css">
+</head>
+<body>
+	<div class="head">
+		<div class="bar_c">
+			<div class="bar_b"></div>
+			<div class="bar_c_a"></div>
+		</div>
+		<div class="half-head">
+			<p class="title">医院信息管理系统</p>
+			<p class="half-title">—— 医生管理</p>
+		</div>
+		<span class="timeShow_1" id="timeShow_1"></span>
+		<div class="half-head_1">
+			<a href="" class="bar_a" id="bar_a" onmouseover="mov()" onmouseout="mou()"><</a>
+			<div class="bar" id="bar">
+				<a href="doctor.html">医生</a>
+				<a href="">病人</a>
+				<a href="">病房</a>
+				<a href="">药品</a>
+				<a href="">收费</a>
+			</div>
+			<p class="username">Ginbing</p>
+			<a href="" class="sign-out"><i class="fa fa-sign-out"></i></a>
+		</div>
+	</div>
+	<div class="main" id="main">
+		<div class="main_bar">
+			<div class="search">
+				<form action="">
+					<input type="text" placeholder="请输入搜索关键字" class="text">
+					<input type="submit" value="" class="submit">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</form>
+			</div>
+			<div class="main_content">
+				<table>
+					<tr>
+						<td>照片</td>
+						<td>医生编号</td>
+						<td>姓名</td>
+						<td>性别</td>
+						<td>联系电话</td>
+						<td>科室</td>
+						<td>医师级别</td>
+						<td>职务</td>
+						<td>是否值班</td>
+						<td class="main_content_td10">工作时间</td>
+					</tr>
+					<tr><!-- 循环 -->
+						<td class="main_content_td11">
+							<img src="img/author_head.gif" alt="img">
+						</td>
+						<td>0123456789</td>
+						<td>胡椒粉</td>
+						<td>男</td>
+						<td>12345678901</td>
+						<td>神经科</td>
+						<td>主治医师</td>
+						<td>主任</td>
+						<td>是</td>
+						<td>09：00 ~ 12：00</td>
+					</tr>
+					<tr><!-- 循环 -->
+						<td class="main_content_td11">
+							<img src="img/author_head.gif" alt="img">
+						</td>
+						<td>0123456789</td>
+						<td>胡椒粉</td>
+						<td>男</td>
+						<td>12345678901</td>
+						<td>神经科</td>
+						<td>主治医师</td>
+						<td>主任</td>
+						<td>是</td>
+						<td>09：00 ~ 12：00</td>
+					</tr>
+					<tr><!-- 循环 -->
+						<td class="main_content_td11">
+							<img src="img/author_head.gif" alt="img">
+						</td>
+						<td>0123456789</td>
+						<td>胡椒粉</td>
+						<td>男</td>
+						<td>12345678901</td>
+						<td>神经科</td>
+						<td>主治医师</td>
+						<td>主任</td>
+						<td>是</td>
+						<td>09：00 ~ 12：00</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/doctor.js"></script>
+	<script type="text/javascript" src="js/homeHeader.js"></script>
+</body>
+</html>
