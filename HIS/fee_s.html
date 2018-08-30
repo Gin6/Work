@@ -5,14 +5,14 @@
 	<title>收费</title>
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/fee.css">
+	<link rel="stylesheet" href="css/fee_s.css">
 	<link rel="stylesheet" href="css/homeHeader.css">
 </head>
 <body>
 	<div class="head">
 		<div class="bar_c">
 			<div class="bar_b"></div>
-			<div class="bar_c_a" onmouseover="mov_1()" onmouseout="mou_1()"></div>
+			<div class="bar_c_a"></div>
 		</div>
 		<div class="half-head">
 			<p class="title">医院信息管理系统</p>
@@ -33,6 +33,7 @@
 			<a href="" class="sign-out"><i class="fa fa-sign-out"></i></a>
 		</div>
 	</div>
+	<form action="">
 	<div class="main" id="main">
 		<div class="main_bar">
 			<div class="main_header main_b">
@@ -85,102 +86,6 @@
 						<td>100.00%</td>
 						<td>诊查费</td>
 					</tr>
-					<tr><!-- 循环 -->
-						<td>挂号费</td>
-						<td></td>
-						<td>1.00</td>
-						<td>1.00</td>
-						<td>次</td>
-						<td>1.00</td>
-						<td>0.00</td>
-						<td>1.00</td>
-						<td>100.00%</td>
-						<td>诊查费</td>
-					</tr>
-					<tr><!-- 循环 -->
-						<td>挂号费</td>
-						<td></td>
-						<td>1.00</td>
-						<td>1.00</td>
-						<td>次</td>
-						<td>1.00</td>
-						<td>0.00</td>
-						<td>1.00</td>
-						<td>100.00%</td>
-						<td>诊查费</td>
-					</tr>
-					<tr><!-- 循环 -->
-						<td>挂号费</td>
-						<td></td>
-						<td>1.00</td>
-						<td>1.00</td>
-						<td>次</td>
-						<td>1.00</td>
-						<td>0.00</td>
-						<td>1.00</td>
-						<td>100.00%</td>
-						<td>诊查费</td>
-					</tr>
-					<tr><!-- 循环 -->
-						<td>挂号费</td>
-						<td></td>
-						<td>1.00</td>
-						<td>1.00</td>
-						<td>次</td>
-						<td>1.00</td>
-						<td>0.00</td>
-						<td>1.00</td>
-						<td>100.00%</td>
-						<td>诊查费</td>
-					</tr>
-					<tr><!-- 循环 -->
-						<td>挂号费</td>
-						<td></td>
-						<td>1.00</td>
-						<td>1.00</td>
-						<td>次</td>
-						<td>1.00</td>
-						<td>0.00</td>
-						<td>1.00</td>
-						<td>100.00%</td>
-						<td>诊查费</td>
-					</tr>
-					<tr><!-- 循环 -->
-						<td>挂号费</td>
-						<td></td>
-						<td>1.00</td>
-						<td>1.00</td>
-						<td>次</td>
-						<td>1.00</td>
-						<td>0.00</td>
-						<td>1.00</td>
-						<td>100.00%</td>
-						<td>诊查费</td>
-					</tr>
-					<tr><!-- 循环 -->
-						<td>挂号费</td>
-						<td></td>
-						<td>1.00</td>
-						<td>1.00</td>
-						<td>次</td>
-						<td>1.00</td>
-						<td>0.00</td>
-						<td>1.00</td>
-						<td>100.00%</td>
-						<td>诊查费</td>
-					</tr>
-					<tr><!-- 循环 -->
-						<td>挂号费</td>
-						<td></td>
-						<td>1.00</td>
-						<td>1.00</td>
-						<td>次</td>
-						<td>1.00</td>
-						<td>0.00</td>
-						<td>1.00</td>
-						<td>100.00%</td>
-						<td>诊查费</td>
-					</tr>
 				</table>
 			</div>
 			<div class="main_footer main_b">
@@ -206,22 +111,42 @@
 						<td class="main_footer_td18 main_footer_box"></td>
 					</tr>
 				</table>
-				<button class="pay" id="pay" onclick="pay()">收款</button>
+				<button type="button" class="pay" id="pay">收款</button>
 			</div>
 			<div class="paybox" id="paybox">
-				<div class="paybox_img"><img src="img/pay.jpg" alt="img"></div>
 				<div class="paybox_main">
+					<div class="paybox_main_bar">
+						<p>请选择支付方式</p>
+					</div>
+					<p class="sum">￥1000.00</p>
+					<div class="wxpay payway">
+						<img src="img/wxpay.png" alt="img">
+						<input type="radio" name="pay" value="wxpay" class="pay_r">
+					</div>
+					<div class="alipay payway">
+						<img src="img/alipay.png" alt="img">
+						<input type="radio" name="pay" value="alipay" class="alipay_r">
+					</div>
+					<div class="unionpay payway">
+						<img src="img/unionpay.png" alt="img">
+						<input type="radio" name="pay" value="unionpay" class="pay_r">
+					</div>
+					<div class="cashpay payway">
+						<img src="img/cashpay.png" alt="img">
+						<input type="radio" name="pay" value="cashpay" class="pay_r" checked>
+					</div>
+					<div class="paynumber">
+						<input type="text" placeholder="付款码">
+					</div>
+					<input type="submit" class="pay_submit" value="确定支付">
 				</div>
-				<button class="pay_back" id="pay_back" onclick="pay_back()"><i class="fa fa-reply" aria-hidden="true"></i></button>
+				<button type="button" class="pay_back" id="pay_back"><i class="fa fa-reply" aria-hidden="true"></i></button>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/fee.js"></script>
+	</form>
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/fee_s.js"></script>
 	<script type="text/javascript" src="js/homeHeader.js"></script>
-	<script>
-		var main = document.getElementById('main');
-		main.style.height = $(window).height()-72+"px";
-	</script>
 </body>
 </html>
