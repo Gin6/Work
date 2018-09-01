@@ -77,6 +77,7 @@
 	width: 10%;
 	border: 1px solid rgb(120, 120, 120);
 	border-radius: 3px;
+	text-align: left;
 }
 .main_footer_td1 {
 	width: 65px;

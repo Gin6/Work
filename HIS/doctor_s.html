@@ -5,6 +5,7 @@
 	<title>医生管理</title>
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/paging.css">
 	<link rel="stylesheet" href="css/doctor_s.css">
 	<link rel="stylesheet" href="css/homeHeader.css">
 </head>
@@ -67,42 +68,33 @@
 						<td>主任</td>
 						<td>是</td>
 						<td class="td_1">09：00 ~ 12：00
-							<div class="td_1_d"></div>
-						</td>
-					</tr>
-					<tr><!-- 循环 -->
-						<td class="main_content_td11">
-							<a href=""><img src="img/author_head.gif" alt="img"></a>
-						</td>
-						<td><a href="">0123456789</a></td>
-						<td><a href="">胡椒粉</a></td>
-						<td>男</td>
-						<td>12345678901</td>
-						<td>神经科</td>
-						<td>主治医师</td>
-						<td>主任</td>
-						<td>是</td>
-						<td class="td_1">09：00 ~ 12：00
-							<div class="td_1_d"></div>
-						</td>
-					</tr>
-					<tr><!-- 循环 -->
-						<td class="main_content_td11">
-							<a href=""><img src="img/author_head.gif" alt="img"></a>
-						</td>
-						<td><a href="">0123456789</a></td>
-						<td><a href="">胡椒粉</a></td>
-						<td>男</td>
-						<td>12345678901</td>
-						<td>神经科</td>
-						<td>主治医师</td>
-						<td>主任</td>
-						<td>是</td>
-						<td class="td_1">09：00 ~ 12：00
-							<div class="td_1_d td_1_d${ }"></div>
+							<div class="td_1_d">
+								<a href=""  class="td_1_d_a">删除</a>
+							</div>
 						</td>
 					</tr>
 				</table>
+			</div>
+			<div class="paging">
+				<div class="container middle">
+					<div class="pagination">
+					  <ul>
+					      <li><a href="#"></a></li>
+					      <li class="active"><a href="#"></a></li>
+					      <li><a href="#"></a></li>
+					      <li><a href="#"></a></li>
+					      <li><a href="#"></a></li>
+					      <li><a href="#"></a></li>
+					      <li><a href="#"></a></li>
+					  </ul>
+					</div>
+					<form action="">
+						<div class="goto">
+							到第<input type="text" class="pages">页
+							<input type="submit" value="确定" class="define">
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -111,11 +103,13 @@
 	<script type="text/javascript" src="js/homeHeader.js"></script>
 	<script>
 		$(document).ready(function (){
-			$('.td_1_d${ }').mouseover(function (){
-				$('.td_1_d${ }').css({"width": "40%",});
+			$('.td_1_d').mouseover(function (){
+				$('.td_1_d').css({"width": "40%",});
+				$('.td_1_d_a').css({"z-index": "1", "width": "100%",});
 			});
-			$('.td_1_d${ }').mouseout(function (){
-				$('.td_1_d${ }').css({"width": "10%",});
+			$('.td_1_d').mouseout(function (){
+				$('.td_1_d').css({"width": "10%",});
+				$('.td_1_d_a').css({"z-index": "-1", "width": "400%",});
 			});
 		});
 	</script>
