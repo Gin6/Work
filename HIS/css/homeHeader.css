@@ -23,12 +23,14 @@ body {
 	margin: 4px 0px;
 	font-size: 27px;
 	letter-spacing: 8px;
+	font-family: STXingkai;
 }
 .half-title {
 	position: absolute;
 	right: -110px;
 	font-size: 16px;
 	top: 0px;
+	font-family: STXingkai;
 }
 .timeShow_1 {
 	position: absolute;
@@ -93,10 +95,14 @@ body {
 	color: rgb(74, 74, 74);
 }
 .username {
-	position: absolute;
-	right:25px;
-	margin: 10px;
-	z-index: 3;
+    position: absolute;
+    width: 90px;
+    height: 29px;
+    left: -130px;
+    overflow: hidden;
+    margin: 10px 8px;
+    text-align: center;
+    z-index: 3;
 }
 .sign-out {
 	position: absolute;
@@ -120,7 +126,9 @@ body {
 .username_1 {
 	position: absolute;
 	top: 15px;
-	right: 75px;
+	left: -150px;
+	width: 62px;
+	overflow: hidden;
 	margin: 0px;
 	font-size: 15px;
 	transition: .3s;

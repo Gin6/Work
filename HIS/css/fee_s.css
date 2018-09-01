@@ -45,6 +45,7 @@
 }
 .main_header_box {
 	width: 10%;
+	text-align: center;
 	border-bottom: 1px solid rgb(120, 120, 120);
 }
 .main_header_td1 {

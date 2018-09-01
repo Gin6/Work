@@ -54,16 +54,40 @@
     width: 90%;
     height: 80%;
 }
+.main_content a {
+	text-decoration: none;
+}
 .main_content table {
 	width: 100%;
-}
-.main_content_td10 {
-	width: 130px;
 }
 .main_content_td11 {
 	width: 10%;
 }
 .main_content_td11 img {
 	width: 50%;
+	padding-top: 3px;
     border-radius: 50%;
+}
+.tr_1 td {
+	padding-bottom: 2%;
+}
+.tr_1:before {
+	content: "";
+	position: absolute;
+	width: 90%;
+	top: 10%;
+	height: 1px;
+	background-color: rgb(120, 120, 120);
+}
+.td_1 {
+	position: relative;
+}
+.td_1_d {
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    width: 10%;
+    height: 100%;
+    transition: .3s;
+    background-color: rgb(241, 92, 92);
 }
