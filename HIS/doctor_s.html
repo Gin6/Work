@@ -35,6 +35,7 @@
 	</div>
 	<div class="main" id="main">
 		<div class="main_bar">
+			<a href="doctor_i.html" class="plus_a"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
 			<div class="search">
 				<form action="">
 					<input type="text" placeholder="请输入搜索关键字" class="text">
@@ -99,9 +100,10 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="js/doctor.js"></script>
 	<script type="text/javascript" src="js/homeHeader.js"></script>
 	<script>
+		var main = document.getElementById('main');
+		main.style.height = $(window).height()-72+"px";
 		$(document).ready(function (){
 			$('.td_1_d').mouseover(function (){
 				$('.td_1_d').css({"width": "40%",});

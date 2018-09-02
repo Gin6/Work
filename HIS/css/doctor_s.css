@@ -12,6 +12,12 @@
     border-top-right-radius: 40px;
     background-color: #fff;
 }
+.plus_a {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    color: #389394;
+}
 .search {
 	position: absolute;
     width: 20%;
@@ -80,7 +86,7 @@
 	width: 90%;
 	top: 55px;
 	height: 1px;
-	background-color: rgb(120, 120, 120);
+	background-color: rgba(120, 120, 120, 0.72);
 }
 .td_1 {
 	position: relative;
