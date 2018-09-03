@@ -1,0 +1,134 @@
+.main {
+	width: auto;
+	height: 100%;
+	padding: 0px 7%;
+	background-color: #f5f5f5;
+}
+.main_bar {
+	position: relative;
+	width: 100%;
+    height: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #fff;
+}
+.search {
+	position: absolute;
+    width: 20%;
+    right: 5%;
+    top: 8%;
+}
+.search .text {
+    width: 79%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 6px 3%;
+    background-color: #efefef;
+    border: none;
+    outline: none;
+}
+.search .submit {
+    position: absolute;
+    width: 15%;
+    background-color: #ffa2a200;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 6px 0px;
+    outline: none;
+    z-index: 2;
+}
+.search .fa-search {
+    position: absolute;
+    color: #fff;
+    background-color: #ff8a8a;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    line-height: 165%;
+}
+.main_left {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	width: 55%;
+	height: 70%;
+	overflow: hidden;
+	border: 1px solid rgba(74, 74, 74, 0.79);
+}
+.main_content {
+    width: 98%;
+    margin: 1%;
+    height: 70px;
+    background-color: rgb(152, 151, 151);
+}
+.main_right_top {
+	position: absolute;
+	top: 20%;
+	right: 5%;
+	width: 30%;
+	height: 0%;
+	border: 1px solid rgba(74, 74, 74, 0.79);
+	transition: .3s;
+}
+.main_right_bottom {
+	position: absolute;
+	right: 5%;
+	bottom: 10%;
+	width: 30%;
+	height: 70%;
+	border: 1px solid rgba(74, 74, 74, 0.79);
+	background-color: #fff;
+	transition: .3s;
+}
+.main_right_bottom .submit {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    width: 80%;
+    height: 35px;
+    border: none;
+    background-color: #F67272;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+}
+.drop {
+	position: relative;
+	width: 100%;
+	height: 8%;
+	padding-top: 3%;
+	transition: .3s;
+}
+.drop p {
+	position: absolute;
+	margin: 0px;
+	left: 10%;
+	padding-top: 2%;
+}
+.drop_l {
+	padding-top: 10px;
+	height: 13%;
+}
+.drop input {
+	position: absolute;
+    right: 10%;
+    border-radius: 3px;
+    border: 1px solid rgb(120, 120, 120);
+    width: 45%;
+    height: 50%;
+}
+.drop_l input {
+	border: none;
+	border-bottom: 1px solid rgb(120, 120, 120);
+	border-radius: 0px;
+}
+.submit_bar {
+	position: absolute;
+	width: 100%;
+	height: 15%;
+	bottom: 0px;
+	background-color: #fff;
+}
