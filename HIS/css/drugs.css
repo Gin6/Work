@@ -56,14 +56,16 @@
 	width: 57%;
 	height: 70%;
 	overflow: hidden;
-	border: 1px solid rgba(74, 74, 74, 0.79);
     z-index: 3;
 }
 .main_content {
+	position: relative;
     width: 98%;
     margin: 1%;
     height: 70px;
-    background-color: rgb(152, 151, 151);
+    background-color: rgba(245, 245, 245);
+    overflow: hidden;
+    transition: .3s;
 }
 .main_right_top {
 	position: absolute;
@@ -71,8 +73,8 @@
 	right: 5%;
 	width: 30%;
 	height: 0%;
-	border: 1px solid rgba(74, 74, 74, 0.79);
 	transition: .3s;
+    background-color: #f5f5f5;
 }
 .main_right_bottom {
 	position: absolute;
@@ -80,7 +82,6 @@
 	bottom: 10%;
 	width: 30%;
 	height: 70%;
-	border: 1px solid rgba(74, 74, 74, 0.79);
 	background-color: #fff;
 	transition: .3s;
 }
@@ -111,18 +112,16 @@
 	position: absolute;
 	margin: 0px;
 	left: 10%;
-	padding-top: 2%;
 }
 .drop_t p {
     padding-top: 5%;
 }
 .drop_t {
-	padding-top: 10px;
-	height: 13%;
+	padding-top: 2.5%;
+	height: 11%;
 }
 .drop_b {
     z-index: 3;
-    margin-top: 1%;
 }
 .drop input {
 	position: absolute;
@@ -137,6 +136,7 @@
 	border: none;
 	border-bottom: 1px solid rgb(120, 120, 120);
 	border-radius: 0px;
+	background-color: #fff0;
 }
 .submit_bar {
 	position: absolute;
@@ -157,7 +157,7 @@
     position: absolute;
     width: 80%;
     left: 10%;
-    height: 6%;
+    height: 8%;
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -172,4 +172,28 @@
 }
 .submit_3 {
     z-index: -1;
+}
+.pagin {
+	position: absolute;
+	width: 57%;
+	top: 10%;
+	left: 5%;
+}
+.pagin a {
+	position: absolute;
+	color: rgba(87, 160, 210, 0.81);
+}
+.pagin .fa_left {
+	left: 2%;
+}
+.pagin .fa_right {
+	right: 2%;
+}
+.main_content .name {
+	margin: 5px;
+}
+.main_content .effect {
+	margin: 0px 5px;
+	font-size: 10px;
+	line-height: 18px;
 }

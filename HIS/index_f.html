@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HIS</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index_f.css">
+	<link rel="stylesheet" href="css/homeHeader.css">
+</head>
+<body>
+	<div class="head">
+		<div class="bar_c">
+			<div class="bar_b"></div>
+			<div class="bar_c_a"></div>
+		</div>
+		<div class="half-head">
+			<p class="title">医院就诊系统</p>
+			<p class="half-title"></p>
+		</div>
+		<span class="timeShow_1" id="timeShow_1"></span>
+		<div class="half-head_1">
+			<a href="" class="bar_a" id="bar_a" onmouseover="mov()" onmouseout="mou()"><</a>
+			<div class="bar" id="bar">
+				<a href="">挂号</a>
+				<a href="">就诊</a>
+				<a href="">缴费</a>
+				<a href="">取药</a>
+			</div>
+			<p class="username">Ginbing</p>
+			<a href="" class="sign-out"><i class="fa fa-sign-out"></i></a>
+		</div>
+	</div>
+	<div id="ta">
+		<div id="theArt">
+			<div class="artGroup slide artGroup_1">
+				<div class="artwork"> <img src="img/15.jpg">
+					<a href="doctor.html">
+						<div class="detail">
+							<h3>挂号</h3>
+							<p><i class="fa fa-quote-left fa-lg pull-left fa-border"></i>需要到挂号/收费的地方购买一本病历本，以便医生记录你的病情。有需要的话，可以开一张病历卡进行病历数码记录。</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="artGroup slide artGroup_2">
+				<div class="artwork"> <img src="img/16.jpg">
+					<a href="">
+						<div class="detail">
+							<h3>就诊</h3>
+							<p><i class="fa fa-quote-left fa-lg pull-left fa-border"></i>领取病历之后就可以前往医生办公室了。根据患处的不同，请自行确认科室。如果是普通的疾病（如感冒，发热等）可到门诊接受治疗。</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="artGroup slide artGroup_3">
+				<div class="artwork"> <img src="img/14.jpg">
+					<a href="">
+						<div class="detail">
+							<h3>缴费</h3>
+							<p><i class="fa fa-quote-left fa-lg pull-left fa-border"></i>医生进行诊断后，会给你在病历本、病历卡/处方签上记录病情，并会根据病情开药或者打针。带上病历卡/处方签到收费处先缴费。</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="artGroup slide artGroup_4">
+				<div class="artwork"> <img src="img/13.jpg">
+					<a href="">
+						<div class="detail">
+							<h3>取药</h3>
+							<p><i class="fa fa-quote-left fa-lg pull-left fa-border"></i>缴费之后，会给你一张两联收据，一般是红绿两色，拿着绿色联到取药处取药即可。</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<p>@2018 HIS</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/modernizr.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script>
+		var ta = document.getElementById('ta');
+		ta.style.height = $(window).height()-72+"px";
+	</script>
+</body>
+</html>
