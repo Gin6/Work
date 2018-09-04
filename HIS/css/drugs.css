@@ -53,10 +53,11 @@
 	position: absolute;
 	top: 20%;
 	left: 5%;
-	width: 55%;
+	width: 57%;
 	height: 70%;
 	overflow: hidden;
 	border: 1px solid rgba(74, 74, 74, 0.79);
+    z-index: 3;
 }
 .main_content {
     width: 98%;
@@ -85,15 +86,19 @@
 }
 .main_right_bottom .submit {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
+    margin-bottom: 5%;
     left: 10%;
     width: 80%;
     height: 35px;
     border: none;
-    background-color: #F67272;
+    background-color: rgb(255, 138, 138);
     outline: none;
     border-radius: 3px;
     color: #fff;
+    z-index: 3;
+    transition: .3s;
+    letter-spacing: 10px;
 }
 .drop {
 	position: relative;
@@ -108,9 +113,16 @@
 	left: 10%;
 	padding-top: 2%;
 }
-.drop_l {
+.drop_t p {
+    padding-top: 5%;
+}
+.drop_t {
 	padding-top: 10px;
 	height: 13%;
+}
+.drop_b {
+    z-index: 3;
+    margin-top: 1%;
 }
 .drop input {
 	position: absolute;
@@ -119,8 +131,9 @@
     border: 1px solid rgb(120, 120, 120);
     width: 45%;
     height: 50%;
+    padding: 0px 10px;
 }
-.drop_l input {
+.drop_t input {
 	border: none;
 	border-bottom: 1px solid rgb(120, 120, 120);
 	border-radius: 0px;
@@ -131,4 +144,32 @@
 	height: 15%;
 	bottom: 0px;
 	background-color: #fff;
+}
+.main_a {
+    position: absolute;
+    width: 94%;
+    height: 76%;
+    left: 3%;
+    top: 17%;
+    z-index: 2;
+}
+.button_2 {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 6%;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+    bottom: 4%;
+    outline: none;
+}
+.button_1 {    
+    z-index: 3;  
+    background-color: rgb(255, 138, 138, 0);   
+}
+.submit_3 {
+    z-index: -1;
 }

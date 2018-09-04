@@ -14,4 +14,5 @@ $(document).ready(function (){
 		$('.fa-times').css({"left": "25%",});
 		$('button').css({"width": "22%", "background-color": "#d2565600",});
 	});
+	// $('button').click();
 });
