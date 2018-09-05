@@ -3,7 +3,7 @@ main.style.height = $(window).height()-72+"px";
 $(document).ready(function (){
 	$('.bar_c_a').mouseover(function (){
 		$('.auther_head').css({"width":"29px", "top":"10px", "right":"95px",});
-		$('.username_1').css({"left":"-88px", "z-index":"2",});
+		$('.username_1').css({"left":"-88px", "z-index":"3",});
 	});
 	$('.bar_c_a').mouseout(function (){
 		$('.auther_head').css({"width":"40px", "top":"5px", "right":"55px",});

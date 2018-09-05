@@ -168,6 +168,7 @@
 }
 .button_1 {    
     z-index: 3;  
+    padding: 0px;
     background-color: rgb(255, 138, 138, 0);   
 }
 .submit_3 {

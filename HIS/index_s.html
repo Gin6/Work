@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HIS</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index_s.css">
+	<link rel="stylesheet" href="css/homeHeader.css">
+</head>
+<body>
+	<div class="head">
+		<div class="bar_c">
+			<div class="bar_b"></div>
+			<div class="bar_c_a"></div>
+		</div>
+		<div class="half-head">
+			<p class="title">医院信息管理系统</p>
+		</div>
+		<span class="timeShow_1" id="timeShow_1"></span>
+		<div class="half-head_1">
+			<a href="" class="bar_a" id="bar_a" onmouseover="mov()" onmouseout="mou()"><</a>
+			<div class="bar" id="bar">
+				<a href="">医生</a>
+				<a href="">病人</a>
+				<a href="">病房</a>
+				<a href="">药品</a>
+				<a href="">收费</a>
+			</div>
+			<img class="auther_head" id="auther_head" src="img/author_head.gif" alt="img">
+			<p class="username_1" id="username_1">Ginbing</p>
+			<a href="" class="sign-out"><i class="fa fa-sign-out"></i></a>
+		</div>
+	</div>
+	<div class="main" id="main">
+		<div class='container'>
+			<div class='wrap'>
+				<div class='crop'>
+					<img src='img/15.jpg'>
+				</div>
+			</div>
+			<div class='wrap'>
+				<div class='crop'>
+					<img src='img/16.jpg'>
+				</div>
+			</div>
+			<div class='wrap'>
+				<div class='crop'>
+					<img src='img/14.jpg'>
+				</div>
+			</div>
+			<div class='wrap'>
+				<div class='crop'>
+					<img src='img/13.jpg'>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<p>@2018 HIS</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/homeHeader.js"></script>
+	<script>
+		var main = document.getElementById('main');
+		main.style.height = $(window).height()-72+"px";
+		$(document).ready(function (){
+			$('.bar_c_a').mouseover(function (){
+				$('.auther_head').css({"width":"29px", "top":"10px", "right":"95px",});
+				$('.username_1').css({"left":"-88px", "z-index":"3",});
+			});
+			$('.bar_c_a').mouseout(function (){
+				$('.auther_head').css({"width":"40px", "top":"5px", "right":"55px",});
+				$('.username_1').css({"left":"-150px", "z-index":"-1",});
+			});
+		});
+	</script>
+</body>
+</html>

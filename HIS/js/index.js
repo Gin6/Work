@@ -63,12 +63,19 @@ $(function () {
 	window.onload=function(){time()}
 })();
 function mov() {
-	document.getElementById('bar').style.cssText = "z-index: 1; right: 130px;";
+	document.getElementById('bar').style.cssText = "z-index: 3; right: 130px;";
 	document.getElementById('bar_a').innerHTML = "&nbsp>";
 	document.getElementById('bar_a').style.cssText = "width: 370px;";
 }
 function mou() {
-	document.getElementById('bar').style.cssText = "z-index: -1; right: -100px;";
+	document.getElementById('bar').style.cssText = "z-index: -1; right: -185px;";
 	document.getElementById('bar_a').innerHTML = "<";
 	document.getElementById('bar_a').style.cssText = "width: 16.33px;";
 }
+$(document).ready(function (){
+	$('.bar').mouseover(function (){
+		$('.bar').css({"right": "130px", "z-index": "3",});
+		$('.bar_a').html("&nbsp>");
+		$('.bar_a').css({"width": "370px", "color": "#E25D5D",});
+	});
+});
