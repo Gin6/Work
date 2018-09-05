@@ -1,8 +1,8 @@
 .container {
 	position: absolute;
-	top: 20px;
-	margin-left: 19%;
-	font-size: 950px;
+	top: 30px;
+	margin-left: 17%;
+	font-size: 726px;
 }
 .wrap {
 	-webkit-transform: rotate(45deg) translate3d(0, 0, 0);
@@ -50,10 +50,10 @@
 }
 .crop {
 	position: relative;
-	top: 323px;
-	left: -47px;
-	width: 900px;
-	height: 900px;
+	top: 230px;
+	left: -40px;
+	width: 700px;
+	height: 700px;
 	margin: 0;
 	display: block;
 	overflow: hidden;
@@ -64,8 +64,8 @@
 	transform: skew(20deg, 20deg) translate3d(0, 0, 0);
 }
 .crop img {
-	width: 900px;
-	height: 900px;
+	width: 700px;
+	height: 700px;
 	position: absolute;
 	left: -45%;
 	margin-top: 36px;
