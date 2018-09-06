@@ -35,13 +35,17 @@
 	<div class="main" id="main">
 		<form action="">
 			<div class="module" id="module">
-				<div class="module_bar" id="module_bar"></div>
-				<div class="modif md"></div>
-				<div class="delete md"></div>
+				<div class="modif md" title="长按修改">
+					<input type="button" class="modif_i">
+				</div>
+				<div class="delete md" title="长按删除">
+					<a href="" class="delete_a">delete</a>
+				</div>
 				<input type="text" value="生化室" class="name">
 				<p class="number">6785</p>
-				<textarea >科室简介</textarea>
+				<textarea>科室简介</textarea>
 				<p class="number_p">人数</p>
+				<p id="time"></p>
 			</div>
 		</form>
 		<div class="module"></div>
