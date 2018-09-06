@@ -81,6 +81,7 @@
 .td_2 {
 	width: 75%;
 	height: 75%;
+    outline: none;
 }
 .faz {
 	z-index: -1;
