@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>病房管理</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/ward.css">
+	<link rel="stylesheet" href="css/homeHeader.css">
+</head>
+<body>
+	<div class="head">
+		<div class="bar_c">
+			<div class="bar_b"></div>
+			<div class="bar_c_a"></div>
+		</div>
+		<div class="half-head">
+			<p class="title">医院信息管理系统</p>
+			<p class="half-title">—— 病房管理</p>
+		</div>
+		<span class="timeShow_1" id="timeShow_1"></span>
+		<div class="half-head_1">
+			<a href="" class="bar_a" id="bar_a" onmouseover="mov()" onmouseout="mou()"><</a>
+			<div class="bar" id="bar">
+				<a href="doctor.html">医生</a>
+				<a href="">病人</a>
+				<a href="">病房</a>
+				<a href="">药品</a>
+				<a href="">收费</a>
+			</div>
+			<p class="username">Ginbing</p>
+			<a href="" class="sign-out"><i class="fa fa-sign-out"></i></a>
+		</div>
+	</div>
+	<div class="main" id="main">
+		<div class="module"></div>
+		<div class="module module_plus">
+			<input type="button" class="return_p" title="单击返回">
+			<input type="button" class="plus">
+			<i class="fa fa-plus-square-o fa-5x" aria-hidden="true"></i>
+			<form action="" class="form_plus">
+				<input type="text" value="病房编号" class="name_2 ngps">
+				<select name="" id="" class="genre ngps">
+					<option value="">普通病房</option>
+					<option value="">重症监护室</option>
+					<option value="">心脏加护病房</option>
+					<option value="">高级病房</option>
+				</select>
+				<input type="text" class="price ngps">
+				<input type="submit" value="保存" class="save ngps">
+			</form>
+		</div>
+		<div class="module_bar"></div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/ward.js"></script>
+	<script type="text/javascript" src="js/homeHeader.js"></script>
+</body>
+</html>
