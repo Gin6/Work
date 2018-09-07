@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>科室管理</title>
+	<title>部门管理</title>
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/department.css">
+	<link rel="stylesheet" href="css/department_a.css">
 	<link rel="stylesheet" href="css/homeHeader.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 		</div>
 		<div class="half-head">
 			<p class="title">医院信息管理系统</p>
-			<p class="half-title">—— 科室管理</p>
+			<p class="half-title">—— 部门管理</p>
 		</div>
 		<span class="timeShow_1" id="timeShow_1"></span>
 		<div class="half-head_1">
@@ -34,28 +34,21 @@
 	</div>
 	<div class="main" id="main">
 		<div class="module" id="module">
+			<div class="md">
+				<input type="button" value="修改" class="modif mds ms">
+				<input type="button" value="删除" class="delete mds">
+				<input type="button" value="返回" class="return mds">
+			</div>
+			<a href="" class="view vd"></a>
+			<a href="" class="delete_a vd"></a>
 			<form action="">
-				<div class="modif md" title="长按左侧修改"></div>
-				<div class="delete md" title="长按右侧删除">
-					<a href="" class="delete_a">delete</a>
-					<p id="time"></p>
-				</div>
-				<input type="text" value="生化室" class="name">
+				<input type="text" value="部门名称" class="name nt" readonly="readonly">
 				<p class="number">6785</p>
-				<textarea class="textarea">科室简介</textarea>
+				<textarea class="textarea nt" readonly="readonly">部门简介</textarea>
 				<p class="number_p">人数</p>
-				<p id="time"></p>
-				<input type="button" value="取消" class="cancel cs">
-				<input type="submit" value="保存" class="submit cs">
+				<input type="submit" value="保存" class="submit mds ms">
 			</form>
 		</div>
-		<div class="module"></div>
-		<div class="module"></div>
-		<div class="module"></div>
-		<div class="module"></div>
-		<div class="module"></div>
-		<div class="module"></div>
-		<div class="module"></div>
 		<div class="module"></div>
 		<div class="module"></div>
 		<div class="module"></div>
@@ -67,14 +60,14 @@
 			<input type="button" class="plus">
 			<i class="fa fa-plus-square-o fa-5x" aria-hidden="true"></i>
 			<form action="">
-				<input type="text" value="科室名称" class="name_2">
-				<textarea class="plusresume">科室简介</textarea>
+				<input type="text" value="部门名称" class="name_2">
+				<textarea class="plusresume">部门简介</textarea>
 				<input type="submit" value="保存" class="save">
 			</form>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="js/department.js"></script>
+	<script type="text/javascript" src="js/department_a.js"></script>
 	<script type="text/javascript" src="js/homeHeader.js"></script>
 </body>
 </html>
