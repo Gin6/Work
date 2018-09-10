@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>就诊</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/visit.css">
+	<link rel="stylesheet" href="css/homeHeader.css">
+</head>
+<body>
+	<div class="head">
+		<div class="bar_c">
+			<div class="bar_b"></div>
+			<div class="bar_c_a"></div>
+		</div>
+		<div class="half-head">
+			<p class="title">医院信息管理系统</p>
+			<p class="half-title">—— 就诊管理</p>
+		</div>
+		<span class="timeShow_1" id="timeShow_1"></span>
+		<div class="half-head_1">
+			<a href="" class="bar_a" id="bar_a" onmouseover="mov()" onmouseout="mou()"><</a>
+			<div class="bar" id="bar">
+				<a href="">医生</a>
+				<a href="">病人</a>
+				<a href="">病房</a>
+				<a href="">药品</a>
+				<a href="">收费</a>
+			</div>
+			<img class="auther_head" id="auther_head" src="img/author_head.gif" alt="img">
+			<p class="username_1" id="username_1">Ginbing</p>
+			<a href="" class="sign-out"><i class="fa fa-sign-out"></i></a>
+		</div>
+	</div>
+	<form action="">
+	<div class="main" id="main">
+		<div class="main_bar">
+			<p class="title main_bar_title">诊疗表</p>
+			<input type="button" value="开药" class="pre">
+			<div class="main_table">
+				<table>
+					<tr>
+						<td class="td_1">病人编号</td>
+						<td></td>
+						<td class="td_1">医生编号</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>是否化验</td>
+						<td>
+							<input type="radio" name="tf_1">是
+							<input type="radio" name="tf_1">否
+						</td>
+						<td>是否检查</td>
+						<td>
+							<input type="radio" name="tf_2">是
+							<input type="radio" name="tf_2">否
+						</td>
+						<td class="td_1">是否住院</td>
+						<td>
+							<input type="radio" name="tf_3" class="td_it">是
+							<input type="radio" name="tf_3" class="td_if">否
+						</td>
+					</tr>
+					<tr>
+						<td>化验结果</td>
+						<td colspan="5" class="td_5"><input type="text"></td>
+					</tr>
+					<tr>
+						<td>检查结果</td>
+						<td colspan="5" class="td_5"><input type="text"></td>
+					</tr>
+					<tr>
+						<td>诊断结果</td>
+						<td colspan="5" class="td_5"><input type="text"></td>
+					</tr>
+					<tr>
+						<td>现状处理</td>
+						<td colspan="5" class="td_5"><input type="text"></td>
+					</tr>
+					<tr class="tr_1">
+						<td>病房号</td>
+						<td class="td_2">
+							<select name="" id="">
+								<option value="">1</option>
+								<option value="">2</option>
+							</select>
+						</td>
+						<td>病床号</td>
+						<td class="td_2">
+							<select name="" id="">
+								<option value="">1</option>
+								<option value="">2</option>
+							</select>
+						</td>
+						<td>住院天数</td>
+						<td><input type="text"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="prescriptions">
+				<p class="title main_bar_title" style="width: 100%">开药单</p>
+				<i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+				<input type="text" value="test">
+			</div>
+		</div>
+	</div>
+	</form>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/visit.js"></script>
+	<script type="text/javascript" src="js/homeHeader.js"></script>
+</body>
+</html>
