@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>取药</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/takemedicine.css">
+	<link rel="stylesheet" href="css/homeHeader.css">
+</head>
+<body>
+	<div class="head">
+		<div class="bar_c">
+			<div class="bar_b"></div>
+			<div class="bar_c_a"></div>
+		</div>
+		<div class="half-head">
+			<p class="title">医院信息管理系统</p>
+			<p class="half-title">—— 取药管理</p>
+		</div>
+		<span class="timeShow_1" id="timeShow_1"></span>
+		<div class="half-head_1">
+			<a href="" class="bar_a" id="bar_a" onmouseover="mov()" onmouseout="mou()"><</a>
+			<div class="bar" id="bar">
+				<a href="">医生</a>
+				<a href="">病人</a>
+				<a href="">病房</a>
+				<a href="">药品</a>
+				<a href="">收费</a>
+			</div>
+			<img class="auther_head" id="auther_head" src="img/author_head.gif" alt="img">
+			<p class="username_1" id="username_1">Ginbing</p>
+			<a href="" class="sign-out"><i class="fa fa-sign-out"></i></a>
+		</div>
+	</div>
+	<div class="main" id="main">
+		<div class="main_bar">
+			<p class="title main_bar_title">取药登记表</p>
+			<div class="main_header">
+				<input type="text" value="病历号" readonly="readonly">
+				<input type="text" value="姓名" readonly="readonly">
+				<input type="text" value="性别" readonly="readonly">
+				<input type="text" value="未取药" readonly="readonly" class="status">
+				<a href="">取药</a>
+			</div>
+			<div class="th">
+				<table>
+					<tr>
+						<td class="td_1">药品编号</td>
+						<td class="td_2">药品名字</td>
+						<td class="td_3">数量</td>
+						<td class="td_4">单位</td>
+						<td class="td_5">规格</td>
+						<td class="td_6">生产日期</td>
+						<td class="td_7">有效日期</td>
+						<td class="td_8">备注</td>
+					</tr>
+				</table>
+			</div>
+			<div class="tf">
+				<table>
+					<tr><!-- 循环 -->
+						<td class="td_1">435676677</td>
+						<td class="td_2">乙肝清热解毒胶囊</td>
+						<td class="td_3">3</td>
+						<td class="td_4">盒</td>
+						<td class="td_5">20颗/盒</td>
+						<td class="td_6">2018/09/09</td>
+						<td class="td_7">2020/09/09</td>
+						<td class="td_8">一日服用2次</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/homeHeader.js"></script>
+	<script>
+		var main = document.getElementById('main');
+		main.style.height = $(window).height()-72+"px";
+	</script>
+</body>
+</html>

@@ -33,21 +33,56 @@
 		</div>
 	</div>
 	<div class="main" id="main">
-		<div class="module"></div>
-		<div class="module module_plus">
-			<input type="button" class="return_p" title="单击返回">
-			<input type="button" class="plus">
-			<i class="fa fa-plus-square-o fa-5x" aria-hidden="true"></i>
-			<form action="" class="form_plus">
-				<input type="text" value="病房编号" class="name_2 ngps">
-				<select name="" id="" class="genre ngps">
+		<div class="module">
+			<a href="" class="module_delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+			<form action="">
+				<input type="text" value="病房编号" class="wardnum ng" title="双击修改">
+				<select name="" id="" class="wardgen ng">
 					<option value="">普通病房</option>
 					<option value="">重症监护室</option>
 					<option value="">心脏加护病房</option>
 					<option value="">高级病房</option>
 				</select>
-				<input type="text" class="price ngps">
-				<input type="submit" value="保存" class="save ngps">
+				<input type="button" value="取消" class="wardcancel cs">
+				<input type="submit" value="确定" class="wardsave cs">
+			</form>
+			<div class="bed">
+				<div class="bed_1 idle">
+					<form action="">
+						<input type="text" value="病床编号" class="bednum bsp">
+						<input type="text" value="空闲" class="status bsp">
+						<input type="text" value="价格" class="price bsp">
+						<input type="button" value="修改" class="bedmod">
+						<input type="submit" value="保存" class="bedsave">
+					</form>
+					<i class="fa fa-angle-down" aria-hidden="true"></i>
+					<div class="delete">
+						<a href="" class="beddel">删除</a>
+					</div>
+				</div>
+				<div class="bed_1 occupy">
+					<form action="">
+						<input type="text" value="病床编号" class="bednum bsp">
+						<input type="text" value="占用" class="status bsp">
+						<input type="text" value="价格" class="price bsp">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="module module_plus">
+			<input type="button" class="return_p" title="单击返回">
+			<input type="button" class="plus">
+			<i class="fa fa-plus-square-o fa-5x" aria-hidden="true"></i>
+			<form action="" class="form_plus">
+				<input type="text" value="病房编号" class="name_2 ngps np">
+				<select name="" id="" class="genre ngps gs">
+					<option value="">普通病房</option>
+					<option value="">重症监护室</option>
+					<option value="">心脏加护病房</option>
+					<option value="">高级病房</option>
+				</select>
+				<input type="text" value="价格" class="price ngps np">
+				<input type="submit" value="保存" class="save ngps gs">
 			</form>
 		</div>
 		<div class="module_bar"></div>
