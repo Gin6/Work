@@ -1,3 +1,8 @@
+// $('body').mousewheel(function (event, delta){
+// 	var left = $(window).scrollLeft();
+// 	$(window).scrollLeft(left-(delta*100))
+// 	event.preventDefault();
+// });
 var main = document.getElementById('main');
 main.style.height = $(window).height()-72+"px";
 $(document).ready(function (){

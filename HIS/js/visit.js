@@ -27,4 +27,10 @@ $(document).ready(function (){
 			$('.main_bar').animate({left: '0%',}, "1s");
 		});
 	});
+	$('#tr_1_fa').click(function (){
+		$('#tr_1').remove();
+	});
+	$('.fa-plus').click(function (){
+		$('.table_1').append('<tr id="tr_3"><td style="width: 40%; padding: 1% 0% 1% 4%;"><i class="fa fa-times" aria-hidden="true" id="tr_1_fa"></i><select name="" id=""  style="width: 80%" class="si"><option value="">乙肝清热解毒胶囊</option></select></td><td style="width: 20%"><input type="text" style="width: 70%" class="si"></td><td style="width: 20%">盒</td><td style="width: 20%">10颗/盒</td></tr></tr>');
+	});
 });
